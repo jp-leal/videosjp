@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d15954b12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <nav>
+            <div class="nav-container">
+            <div class="logo">JoãoPaulo</div>
+            <ul class="nav-links sidebar">
+                <li onclick=closemenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav-links">
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="menu-button" onclick="openmenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            </div>
+        </nav>
+
+
+
+<section class="video-section">
+    <video id="background-video" src="images/hd.mp4" autoplay muted loop></video>
+    <div class="overlay-text">
+        <h1>Turning moments into stories</h1>
+        <p>Let me tell your story</p>
+        <button aria-label="Contact Us" onclick="window.location.href='#contact'">Contact</button>
+
+    </div>
+    <div class="video-controls">
+        <img src="images/volume.png" alt="Volume On" class="volume-icon volume-on" onclick="toggleMute()">
+        <img src="images/mutee.png" alt="Volume Off" class="volume-icon volume-off" style="display: none;" onclick="toggleMute()">
+        <img src="images/play-pause-icon.png" alt="Play" class="play-pause-icon play" onclick="togglePlayPause()">
+        <img src="images/play-pause-icon.png" alt="Pause" class="play-pause-icon pause" style="display: none;" onclick="togglePlayPause()">
+    </div>
+
+</section>
+
+<section id="about" class="about-section">
+
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hi, I’m JP—an avid traveler passionate about discovering new places and meeting people. I love technology and the art of filmmaking. I thought that by creating this website, I would be able to showcase my work and connect with those interested in working with me.
+
+            Over the past year, I’ve been making  social media content for local businesses.
+
+            I am always looking for new places and people to work with. Let’s work together to make sure your brand is told the way it deserves to be..</p>
+    </div>
+    <img src="images/jao.png" alt="About Image">
+</section>
+        
+<div class="divider"></div> <!-- Divider line -->
+<h4>My Work</h4>
+<div class="portfolio-container">
+    <!-- Generate rectangles with links -->
+    <a class="grid-item" href="subfolders/project1.html" data-title="UK 2023">
+        <img src="images/video1.png" alt="Project 1 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project2.html" data-title="Amazonia Real e Surreal">
+        <img src="images/video2.png" alt="Project 2 Image">
+    </a>
+    <a class="grid-item" href="project3.html" data-title="Fraj & Arit - Perto Desse Ceu">
+        <img src="images/video3.png" alt="Project 3 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project4.html" data-title="Charlotte & Henry - Wedding UK">
+        <img src="images/video4.png" alt="Project 4 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project5.html" data-title="Mill 28 Anos - Corporate Video">
+        <img src="images/video5.png" alt="Project 5 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project6.html" data-title="Kate & Dan - Wedding UK">
+        <img src="images/video6.png" alt="Project 6 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project7.html" data-title="Souvenirs D'automne">
+        <img src="images/video7.png" alt="Project 7 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project8.html" data-title="Project 8">
+        <img src="images/video8.png" alt="Project 8 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project1.html" data-title="Project 1">
+        <img src="images/video1.png" alt="Project 1 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project1.html" data-title="Project 1">
+        <img src="images/video1.png" alt="Project 1 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project1.html" data-title="Project 1">
+        <img src="images/video1.png" alt="Project 1 Image">
+    </a>
+    <a class="grid-item" href="subfolders/project1.html" data-title="Project 1">
+        <img src="images/video1.png" alt="Project 1 Image">
+    </a>
+
+</div>
+<footer id="contact" class="footer">
+    <div class="footer-content">
+        <div class="contact-form">
+            <h2>Get in touch</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('background-video');
+
+        function updateVideoSource() {
+            if (window.innerWidth <= 768) {
+                // Small screen
+                video.src = 'images/hdvertical.mp4';
+            } else {
+                // Large screen
+                video.src = 'images/hd.mp4';
+            }
+        }
+
+        // Initial load
+        updateVideoSource();
+
+        // Update video source on resize
+        window.addEventListener('resize', updateVideoSource);
+    });
+
+
+    // script.js
+
+    let lastScrollTop = 0;
+    const header = document.querySelector('nav');
+
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down
+            header.classList.add('header-hidden');
+        } else {
+            // Scrolling up
+            header.classList.remove('header-hidden');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('background-video');
+        const volumeOnIcon = document.querySelector('.volume-on');
+        const volumeOffIcon = document.querySelector('.volume-off');
+        const playIcon = document.querySelector('.play');
+        const pauseIcon = document.querySelector('.pause');
+
+        function updateVideoSource() {
+            video.src = window.innerWidth <= 768 ? 'images/hdvertical.mp4' : 'images/hd.mp4';
+        }
+
+        function toggleMute() {
+            video.muted = !video.muted;
+            volumeOnIcon.style.display = video.muted ? 'none' : 'block';
+            volumeOffIcon.style.display = video.muted ? 'block' : 'none';
+        }
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            } else {
+                video.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            }
+        }
+
+        updateVideoSource();
+        window.addEventListener('resize', updateVideoSource);
+
+        volumeOnIcon.addEventListener('click', toggleMute);
+        volumeOffIcon.addEventListener('click', toggleMute);
+        playIcon.addEventListener('click', togglePlayPause);
+        pauseIcon.addEventListener('click', togglePlayPause);
+
+        document.querySelectorAll('.sidebar a').forEach(item => item.addEventListener('click', closemenu));
+    });
+
+    function openmenu() {
+        document.querySelector('.sidebar').style.display = 'flex';
+    }
+
+    function closemenu() {
+        document.querySelector('.sidebar').style.display = 'none';
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
